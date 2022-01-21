@@ -1,0 +1,9 @@
+.Pricing {
+  @include PageWrap(70px);
+  color: $nvgum;
+  @import "PricingIntro";
+  @import "PricingExpertTutors";
+  @import "PricingTrusted";
+  @import "PricingMoreReasons";
+  @import "PricingFAQ";
+}

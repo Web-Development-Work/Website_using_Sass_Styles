@@ -1,0 +1,114 @@
+&-Banner {
+  @include EasyABanner;
+  margin-top: 45px;
+  background-color: $supernova;
+  margin-left: 45px;
+  margin-right: 45px;
+  @media screen and (max-width: 1200px) {
+    margin-top: 0;
+  }
+  &-Text {
+    float: left;
+    padding: 115px 0 50px 115px;
+    @media screen and (max-width: 1200px) {
+      float: none;
+      padding: 48px 25px 50px;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+    h1 {
+      margin: 5px 0 25px;
+      color: $nvgum;
+      font-size: 8.8em;
+      font-weight: 900;
+      letter-spacing: -1.97px;
+      line-height: 0.9;
+      @media screen and (max-width: 1200px) {
+        font-size: 5.65em;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
+    }
+    p {
+      margin: 0;
+      line-height: 1.65;
+      font-size: 1.55em;
+      &.lead {
+        margin: 0 0 30px;
+        font-size: 1.8em;
+        letter-spacing: 0.5px;
+      }
+      @media screen and (max-width: 1200px) {
+        margin: 0;
+        line-height: 1.65;
+        font-size: 1.35em;
+      }
+    }
+    .action-button {
+      margin: 33px 0 0;
+      @media screen and (max-width: 1200px) {
+        .easya-btn-banner {
+          display: block;
+        }
+      }
+    }
+  }
+  &-Image {
+    float: left;
+    padding: 48px 0 0;
+    position: relative;
+    &-Snap {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      z-index: 1;
+      top: 90px;
+      left: 15px;
+    }
+    &-Slider {
+      position: absolute;
+      overflow: hidden;
+      top: 75px;
+      left: 0;
+      border-radius: 16px;
+      padding: 15px 15px 15px 90px;
+      background-color: rgba($white, 0.9);
+      width: 275px;
+      color: $nvgum;
+      &-Slide {
+        h3 {
+          margin: 0;
+          font-size: 1.8em;
+          font-weight: bold;
+          letter-spacing: -0.4px;
+          line-height: 1.77;
+        }
+        p {
+          font-size: 1.4em;
+          letter-spacing: 0.14px;
+          line-height: 1.42;
+          margin: 0;
+        }
+      }
+    }
+    img {
+      max-width: 550px;
+      display: block;
+    }
+    @media screen and (max-width: 1200px) {
+      padding: 0;
+      position: relative;
+      img {
+        position: static;
+        width: 100%;
+        display: block;
+      }
+      .Home-Banner-Image-Snap,
+      &-Slider {
+        display: none;
+      }
+    }
+  }
+}

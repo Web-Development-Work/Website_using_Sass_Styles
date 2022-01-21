@@ -1,0 +1,152 @@
+$nvgum: #321454;
+$tango: #f37121;
+$seance: #60179c;
+$white: #fff;
+$black: #000;
+$supernova: #fcc400;
+$sun: #fedb41;
+$mardigras: #240038;
+$shellpeach: #fff6f0;
+$borders: #eff0f3;
+$footerbg: #a099a6;
+.easya {
+  &-bgc- {
+    &nvgum {
+      background-color: $nvgum;
+    }
+    &seance {
+      background-color: $seance;
+    }
+    &mardigras {
+      background-color: $mardigras;
+    }
+    &tango {
+      background-color: $tango;
+    }
+    &shellpeach {
+      background-color: $shellpeach;
+    }
+    &white {
+      background-color: $white;
+    }
+    &black {
+      background-color: $black;
+    }
+    &supernova {
+      background-color: $supernova;
+    }
+    &sun {
+      background-color: $sun;
+    }
+    &hover-nvgum {
+      background-color: rgba($nvgum, 0.2);
+      &:hover {
+        background-color: $nvgum;
+      }
+    }
+    &hover-seance {
+      background-color: rgba($seance, 0.2);
+      &:hover {
+        background-color: $seance;
+      }
+    }
+    &hover-mardigras {
+      background-color: rgba($mardigras, 0.2);
+      &:hover {
+        background-color: $mardigras;
+      }
+    }
+    &hover-tango {
+      background-color: rgba($tango, 0.2);
+      &:hover {
+        background-color: $tango;
+      }
+    }
+    &hover-white {
+      background-color: rgba($white, 0.2);
+      &:hover {
+        background-color: $white;
+      }
+    }
+    &hover-shellpeach {
+      background-color: rgba($shellpeach, 0.2);
+      &:hover {
+        background-color: $shellpeach;
+      }
+    }
+    &hover-black {
+      background-color: rgba($black, 0.2);
+      &:hover {
+        background-color: $black;
+      }
+    }
+    &hover-supernova {
+      background-color: rgba($supernova, 0.2);
+      &:hover {
+        background-color: $supernova;
+      }
+    }
+    &hover-sun {
+      background-color: rgba($sun, 0.2);
+      &:hover {
+        background-color: $sun;
+      }
+    }
+    &trans-nvgum {
+      background-color: rgba($nvgum, 0.2);
+    }
+    &trans-seance {
+      background-color: rgba($seance, 0.2);
+    }
+    &trans-mardigras {
+      background-color: rgba($mardigras, 0.2);
+    }
+    &trans-tango {
+      background-color: rgba($tango, 0.2);
+    }
+    &trans-white {
+      background-color: rgba($white, 0.2);
+    }
+    &trans-shellpeach {
+      background-color: rgba($shellpeach, 0.2);
+    }
+    &trans-black {
+      background-color: rgba($black, 0.2);
+    }
+    &trans-supernova {
+      background-color: rgba($supernova, 0.2);
+    }
+    &trans-sun {
+      background-color: rgba($sun, 0.2);
+    }
+  }
+  &-color- {
+    &nvgum {
+      color: $nvgum;
+    }
+    &tango {
+      color: $tango;
+    }
+    &seance {
+      color: $seance;
+    }
+    &mardigras {
+      color: $mardigras;
+    }
+    &white {
+      color: $white;
+    }
+    &shellpeach {
+      color: $shellpeach;
+    }
+    &black {
+      color: $black;
+    }
+    &supernova {
+      color: $supernova;
+    }
+    &sun {
+      color: $sun;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.BackgroundBannerWithImage {
+  position: relative;
+  .action-button {
+    position: relative;
+    z-index: 2;
+  }
+  &-Img {
+    position: absolute;
+    width: 500px;
+    z-index: 1;
+    &.Bottom {
+      bottom: 0;
+    }
+    &.Top {
+      top: 0;
+    }
+    &.Left {
+      left: 0;
+    }
+    &.Right {
+      right: 0;
+    }
+  }
+}

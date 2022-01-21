@@ -1,0 +1,75 @@
+&-Trusted {
+  margin: 0 0 45px;
+  margin-left: 45px;
+  h2 {
+    font-size: 4.8em;
+    font-weight: 600;
+    letter-spacing: -1.07px;
+    line-height: 1.16;
+    text-align: center;
+    margin: 0 0 15px;
+    @media screen and (max-width: 1200px) {
+      font-size: 3em;
+      margin: 0 10px 10px;
+    }
+  }
+  p {
+    font-size: 2em;
+    letter-spacing: -0.45px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 0 70px;
+  }
+  &-List {
+    columns: 3;
+    @media screen and (max-width: 1200px) {
+      columns: 1;
+    }
+    &-Item {
+      margin: 0 115px 50px 0;
+      max-width: 300px;
+      display: inline-block;
+      @media screen and (max-width: 1200px) {
+        margin: 0 10px 10px 10px;
+        text-align: justify;
+      }
+      &-Meta {
+        display: flex;
+        @media screen and (max-width: 1200px) {
+          margin-top: 15px;
+        }
+        img {
+          width: 42px;
+          height: 42px;
+          border-radius: 100%;
+          margin-right: 10px;
+        }
+        &-Data {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          p {
+            line-height: 1.2;
+            margin: 0 0 5px;
+            text-align: left;
+            strong {
+              display: block;
+              font-size: 0.8em;
+            }
+            & + p {
+              font-size: 1.4em;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+      &-Text {
+        margin-top: 10px;
+        font-size: 1.6em;
+        letter-spacing: -0.36px;
+        line-height: 1.5625;
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+&-FAQ {
+  margin-left: 45px;
+  margin-right: 45px;
+
+  h2 {
+    margin: 0 0 80px; 
+    font-weight: 600;
+    font-size: 5em;
+    letter-spacing: -0.72px;
+    line-height: 1.16;
+    max-width: 725px;
+    @media screen and (max-width: 1200px) {
+      margin: 0 10px 50px;
+      font-size: 3em;
+    }
+  }
+  &-List {
+    &-Section {
+      display: flex;
+      background-color: rgb(241, 180, 145);
+      border-radius: 50px;
+      flex-direction: row;
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        margin: 5px 0 0;
+      }
+      margin: 35px 0 0;
+      &:first-child {
+        margin: 0;
+      }
+      h3 {
+        max-width: 425px;
+        min-width: 425px;
+        font-size: 2.4em;
+        margin-left: 40px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: 550;
+        letter-spacing: -0.54px;
+        line-height: 1.5;
+        padding-right: 150px;
+        @media screen and (max-width: 1200px) {
+          min-width: auto;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+      &-Questions {
+        flex-grow: 1;
+        margin-left: 45px;
+        margin-right: 45px;
+        &-Item {
+          padding: 20px 0;
+          border-bottom: 1px solid $borders;
+          
+          p {
+            font-size: 1.8em;
+            letter-spacing: -0.4px;
+            line-height: 2;
+            position: relative;
+            margin: 4px;
+            @media screen and (max-width: 1200px) {
+              margin: 0 10px;
+            }
+            cursor: pointer;
+            img {
+              filter: grayscale(1);
+              opacity: 0.4;
+              position: absolute;
+              right: 5px;
+              top: 15px;
+              &.Open {
+                transform: rotate(180deg);
+              }
+            }
+            & + p {
+              margin-top: 20px;
+              cursor: default;
+            }
+          }
+          &.NoQuestion {
+            border: none;
+            p {
+              margin: 10px 0;
+              font-size: 1.6em;
+              letter-spacing: -0.36px;
+              line-height: 1.8125;
+              @media screen and (max-width: 1200px) {
+                margin: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

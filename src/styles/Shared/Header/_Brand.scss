@@ -1,0 +1,15 @@
+&-Brand {
+  margin: 0;
+  float: left;
+  a {
+    display: block;
+    img {
+      display: block;
+      height: 40px;
+      @media screen and (max-width: 1200px) {
+        height: 27px;
+        margin-top: 1px;
+      }
+    }
+  }
+}

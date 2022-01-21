@@ -1,0 +1,21 @@
+&-Blogs {
+  margin-left: 45px;
+  margin-right: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 120px 0;
+  .BlogPost {
+    padding: 0 10px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0 7em;
+    padding: 16px;
+    .BlogPost {
+      margin-bottom: 7em;
+    }
+  }
+}

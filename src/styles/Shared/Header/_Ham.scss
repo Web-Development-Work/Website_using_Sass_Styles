@@ -1,0 +1,50 @@
+&-Ham {
+  padding: 0 3px 3px;
+  border-radius: 3px;
+  float: left;
+  margin: 6px 12px 0 -2px;
+  cursor: pointer;
+  display: none;
+  @media screen and (max-width: 1200px) {
+    display: block;
+  }
+  span {
+    display: block;
+    margin-top: 3px;
+    background-color: $nvgum;
+    width: 15px;
+    height: 2px;
+  }
+  &.Open {
+    span {
+      $back: #fff;
+      $fore: #000;
+      display: none;
+      &:first-child {
+        margin: -5px -5px 0;
+        display: block;
+        width: 25px;
+        height: 25px;
+        border: 7px solid $back;
+        background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 43%,
+            $fore 45%,
+            $fore 55%,
+            rgba(0, 0, 0, 0) 57%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          linear-gradient(
+            135deg,
+            $back 0%,
+            $back 43%,
+            $fore 45%,
+            $fore 55%,
+            $back 57%,
+            $back 100%
+          );
+      }
+    }
+  }
+}

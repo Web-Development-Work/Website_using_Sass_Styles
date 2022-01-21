@@ -1,0 +1,67 @@
+&-List {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 45px;
+  margin-right: 45px;
+  //background-color: #000000;
+  .BlogPost {
+    width: 50%;
+    padding: 0 25px;
+    margin: 0 0 100px;
+  
+    img {
+      display: block;
+      width: 100%;
+    }
+    &-Content {
+      left: 70px;
+      right: 70px;
+      padding: 20px 30px;
+      h3 {
+        font-weight: 600;
+        margin: 0 0 5px;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    display: block;
+    .BlogPost {
+      width: auto;
+      margin: 0;
+      &-Content {
+        position: relative;
+        top: -100px;
+        left: 0;
+        margin: 25px 25px -50px;
+        bottom: auto;
+        h3 {
+        }
+      }
+    }
+  }
+}
+> p {
+  margin: 0 0 65px;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 500;
+  letter-spacing: -0.13px;
+  line-height: 1.25;
+  a {
+    color: $tango;
+    img {
+      position: relative;
+      top: -2px;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+  }
+}
+
+> p {
+  a {
+    img {
+    }
+  }
+}

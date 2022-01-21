@@ -1,0 +1,15 @@
+.Header {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+  &-Wrapper {
+    overflow: hidden;
+    @include PageWrap(auto);
+    padding: 20px 0;
+    @media screen and (max-width: 1200px) {
+      padding: 16px;
+    }
+  }
+  @import "Ham";
+  @import "MobileHeaderMenu";
+  @import "Brand";
+  @import "PrimaryNav";
+}

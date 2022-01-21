@@ -1,0 +1,13 @@
+.Home-ParentTestimonial {
+  margin-left: -45px;
+  margin-right: -45px;
+  p {
+    color: $white;
+  }
+  @media screen and (max-width: 1200px) {
+    &-Banner {
+      border-radius: 20px;
+    }
+    margin: 0 -16px;
+  }
+}

@@ -1,0 +1,9 @@
+.Home {
+  @include PageWrap(auto);
+  @import "HomeBanner";
+  @import "Child247";
+  @import "BackedByBanner";
+  @import "HomeSubjects";
+  @import "HomeParentTestimonial";
+  @import "HomePlans";
+}

@@ -1,0 +1,10 @@
+.Testimonials {
+  width: 1260px;
+  margin: auto;
+  color: $nvgum;
+  @import "TestIntro";
+  @import "TestReviews";
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
+}

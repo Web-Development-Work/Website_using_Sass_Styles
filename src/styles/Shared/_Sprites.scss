@@ -1,0 +1,113 @@
+@mixin IconFileBg {
+  background-image: url("../../assets/icons.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+@mixin Square($size) {
+  width: $size;
+  height: $size;
+}
+
+.SubjectIcon {
+  @include IconFileBg;
+  @include Square(76px);
+  &Early {
+    background-position: -376px -370px;
+    &:hover {
+      background-position: -376px -990px;
+    }
+  }
+  &Algebra {
+    background-position: -892px -370px;
+    &:hover {
+      background-position: -892px -990px;
+    }
+  }
+  &Geometry {
+    background-position: -1416px -370px;
+    &:hover {
+      background-position: -1416px -990px;
+    }
+  }
+  &Series {
+    background-position: -1918px -370px;
+    &:hover {
+      background-position: -1918px -990px;
+    }
+  }
+  &Stats {
+    background-position: -2436px -370px;
+    &:hover {
+      background-position: -2436px -990px;
+    }
+  }
+  &Trigonometry {
+    background-position: -374px -598px;
+    &:hover {
+      background-position: -374px -1218px;
+    }
+  }
+  &Graphs {
+    background-position: -892px -598px;
+    &:hover {
+      background-position: -892px -1218px;
+    }
+  }
+  &Integration {
+    background-position: -1416px -578px;
+    &:hover {
+      background-position: -1416px -1218px;
+    }
+  }
+  &Differentiation {
+    background-position: -1916px -592px;
+    &:hover {
+      background-position: -1916px -1212px;
+    }
+  }
+}
+
+.RoundIcon {
+  @include IconFileBg;
+  &Tick {
+    background-position: -1406px -1704px;
+    @include Square(96px);
+  }
+  &Right {
+    background-position: -1906px -1698px;
+    @include Square(100px);
+  }
+  &MouseBlue {
+    background-position: -1880px -3690px;
+    @include Square(152px);
+  }
+  &MouseGreen {
+    background-position: -2398px -3690px;
+    @include Square(152px);
+  }
+}
+
+.ReasonsIcon {
+  @include IconFileBg;
+  &-Heart {
+    background-position: -1930px -2246px;
+    width: 45px;
+    height: 41px;
+  }
+  &-Spade {
+    background-position: -1930px -2564px;
+    width: 38px;
+    height: 45px;
+  }
+  &-Umbrella {
+    background-position: -1919px -2984px;
+    width: 56px;
+    height: 39px;
+  }
+  &-Carpet {
+    background-position: -1922px -3316px;
+    width: 53px;
+    height: 48px;
+  }
+}
